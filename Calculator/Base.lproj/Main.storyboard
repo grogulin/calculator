@@ -26,10 +26,13 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mE-U8-NLf">
                                                 <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                                 <color key="tintColor" name="AccentColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="AC">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="AC"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-OR-wN4">
@@ -37,8 +40,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="+/-">
+                                                <buttonConfiguration key="configuration" style="plain" title="+/-">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmR-7J-lpj">
@@ -46,8 +50,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="%">
+                                                <buttonConfiguration key="configuration" style="plain" title="%">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkU-NN-esF">
@@ -55,8 +60,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="÷">
+                                                <buttonConfiguration key="configuration" style="plain" title="÷">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="divideButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqA-n6-dEo"/>
@@ -74,8 +80,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="7">
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGO-L3-vCo"/>
@@ -86,8 +93,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="8">
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vlx-7H-zOo"/>
@@ -98,8 +106,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="9">
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dan-wM-GuT"/>
@@ -110,8 +119,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="×">
+                                                <buttonConfiguration key="configuration" style="plain" title="×">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="multiplyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYi-n0-X1b"/>
@@ -130,8 +140,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="4">
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSz-Nd-g6i"/>
@@ -142,8 +153,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="5">
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4l-O8-UgA"/>
@@ -154,8 +166,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="6">
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQM-93-8nn"/>
@@ -166,8 +179,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="−">
+                                                <buttonConfiguration key="configuration" style="plain" title="−">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="minusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8y-Ni-u5Z"/>
@@ -186,8 +200,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="1">
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWV-1S-Oc4"/>
@@ -198,8 +213,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="2">
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSn-5B-wLM"/>
@@ -210,8 +226,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="3">
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALc-Te-eJE"/>
@@ -222,8 +239,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="+">
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8t-Sp-SjY"/>
@@ -242,8 +260,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="0">
+                                                <buttonConfiguration key="configuration" style="plain" title="0">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="numberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SBj-Iu-Dy7"/>
@@ -254,15 +273,18 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title=" "/>
+                                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLL-Qa-tUN">
                                                 <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="100"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title=",">
+                                                <buttonConfiguration key="configuration" style="plain" title=",">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="decimalButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FNd-RD-qOp"/>
@@ -273,8 +295,9 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="=">
+                                                <buttonConfiguration key="configuration" style="plain" title="=">
                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="equalsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdW-fy-wFG"/>
@@ -305,8 +328,8 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="firstArg =  secondArg = " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLV-eK-2pc">
-                                <rect key="frame" x="20" y="101" width="353" height="40.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLV-eK-2pc">
+                                <rect key="frame" x="20" y="101" width="353" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

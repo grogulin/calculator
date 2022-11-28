@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
 //    var numberButtons: [UIButton]!
     
+    var debug : Bool = false
+    
     var firstArg : Decimal = 0
     var secondArg : Decimal = 0
     var result : Decimal = 0
@@ -41,7 +43,9 @@ class ViewController: UIViewController {
         updateResultLabel(result: firstArg)
         
         configureACButton()
-        startTimer()
+        if debug {
+            startTimer()
+        }
         
     }
     
@@ -101,14 +105,6 @@ class ViewController: UIViewController {
                 addToSecondArg(number: numberPressed)
             }
             
-//            let ac = UIAlertController(title: title, message: "Current Arguments' State", preferredStyle: .alert)
-//            ac.addAction(UIAlertAction(title: "firstArg is \(firstArg)", style: .default, handler: { (_) in
-//                return
-//            }))
-//            ac.addAction(UIAlertAction(title: "secondArg is \(secondArg)", style: .default, handler: { (_) in
-//                return
-//            }))
-//            self.present(ac, animated: true)
         }
             
     }
@@ -156,11 +152,9 @@ class ViewController: UIViewController {
         decimalPart = decimalPart + String(number)
         
         if firstArgIsBeingTyped {
-            let valueToAdd = String(Float("0." + decimalPart) ?? 0)
             firstArg = Decimal(string: String(Int(truncating: firstArg as NSNumber)) + "." + decimalPart) ?? 0
             updateResultLabel(result: firstArg)
         } else {
-            let valueToAdd = String(Float("0." + decimalPart) ?? 0)
             secondArg = Decimal(string: String(Int(truncating: secondArg as NSNumber)) + "." + decimalPart) ?? 0
             updateResultLabel(result: secondArg)
         }
