@@ -49,6 +49,10 @@ class ViewController: UIViewController {
         
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(showArgs), userInfo: nil, repeats: true)
     }
@@ -90,7 +94,7 @@ class ViewController: UIViewController {
         
         let number = Int(numberPressed) ?? 0
         
-        print("Action number button pressed fired!")
+        
         
         
         if decimalPartIsBeingTyped {
@@ -130,6 +134,7 @@ class ViewController: UIViewController {
 
 //        print("Firstarg is \(String(firstArg).split(separator: ".", maxSplits: 2, omittingEmptySubsequences: true)[0])")
 //        print("Secondarg is \(number)")
+        
         let valueToAdd = String(Int(truncating: firstArg as NSNumber))
         firstArg = Decimal(string: valueToAdd + number) ?? 0
 //        resultLabel.text = String(firstArg)
@@ -259,3 +264,6 @@ extension Decimal {
         return self-(b*(f))
     }
 }
+
+
+

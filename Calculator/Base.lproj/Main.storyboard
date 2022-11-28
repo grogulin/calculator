@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-1c-o18">
-                                <rect key="frame" x="0.0" y="332" width="393" height="520"/>
+                                <rect key="frame" x="0.0" y="432" width="393" height="420"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvA-fI-vps">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mE-U8-NLf">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                                 <color key="tintColor" name="AccentColor"/>
@@ -35,8 +35,8 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-OR-wN4">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-OR-wN4">
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -45,8 +45,8 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmR-7J-lpj">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="100"/>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmR-7J-lpj">
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -56,7 +56,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkU-NN-esF">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="100"/>
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -70,14 +70,14 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="l1J-2G-3Zp"/>
+                                            <constraint firstAttribute="height" constant="80" id="l1J-2G-3Zp"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84U-do-Lxr">
-                                        <rect key="frame" x="0.0" y="100" width="393" height="100"/>
+                                        <rect key="frame" x="0.0" y="80" width="393" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95u-mH-JhY">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="7">
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ki4-S9-xwG">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="100"/>
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -102,7 +102,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hs-tj-U2v">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="100"/>
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -115,7 +115,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVA-kq-LUg">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="100"/>
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -129,14 +129,14 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="tYF-SG-FYa"/>
+                                            <constraint firstAttribute="height" constant="80" id="tYF-SG-FYa"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hio-Ok-wh0">
-                                        <rect key="frame" x="0.0" y="200" width="393" height="100"/>
+                                        <rect key="frame" x="0.0" y="160" width="393" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ5-51-lWY">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -149,7 +149,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUg-IA-Bl3">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="100"/>
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -162,7 +162,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNz-7F-lmh">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="100"/>
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -175,7 +175,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yac-EZ-gN6">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="100"/>
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -189,14 +189,14 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="E3h-7x-Z1z"/>
+                                            <constraint firstAttribute="height" constant="80" id="E3h-7x-Z1z"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jw-yz-EA3">
-                                        <rect key="frame" x="0.0" y="300" width="393" height="100"/>
+                                        <rect key="frame" x="0.0" y="240" width="393" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPz-95-syp">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -209,7 +209,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-Pg-5tC">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="100"/>
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -222,7 +222,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW2-cb-AFK">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="100"/>
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -235,7 +235,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG1-BC-tMu">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="100"/>
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -249,14 +249,14 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="S6R-8o-L1M"/>
+                                            <constraint firstAttribute="height" constant="80" id="S6R-8o-L1M"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-9k-9eM">
-                                        <rect key="frame" x="0.0" y="400" width="393" height="100"/>
+                                        <rect key="frame" x="0.0" y="320" width="393" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2T-vR-oQ9">
-                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -269,7 +269,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUk-Gy-1S4">
-                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="100"/>
+                                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -278,7 +278,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLL-Qa-tUN">
-                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="100"/>
+                                                <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -291,7 +291,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWz-JP-osj">
-                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="100"/>
+                                                <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="80"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
@@ -305,11 +305,11 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="MA9-co-R3r"/>
+                                            <constraint firstAttribute="height" constant="80" id="MA9-co-R3r"/>
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRv-vJ-sMo">
-                                        <rect key="frame" x="0.0" y="500" width="393" height="20"/>
+                                        <rect key="frame" x="0.0" y="400" width="393" height="20"/>
                                         <color key="tintColor" systemColor="linkColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="BrP-mZ-CTW"/>
@@ -320,9 +320,12 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="420" id="hW5-lw-uXH"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1100,56" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-Md-4su">
-                                <rect key="frame" x="20" y="159" width="353" height="163"/>
+                                <rect key="frame" x="20" y="69" width="353" height="353"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="80"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -341,7 +344,7 @@
                             <constraint firstItem="iRv-vJ-sMo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FSp-XU-Q5u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hOy-1c-o18" secondAttribute="trailing" id="Qdp-G3-LeM"/>
                             <constraint firstItem="hOy-1c-o18" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VAt-k4-avb"/>
-                            <constraint firstItem="S7P-Md-4su" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Xrd-Nq-xDt"/>
+                            <constraint firstItem="S7P-Md-4su" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Xrd-Nq-xDt"/>
                             <constraint firstItem="gLV-eK-2pc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZqV-E6-h2r"/>
                             <constraint firstAttribute="bottom" secondItem="hOy-1c-o18" secondAttribute="bottom" id="dlT-3a-iwX"/>
                             <constraint firstItem="gLV-eK-2pc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="e4c-KQ-Z8a"/>
