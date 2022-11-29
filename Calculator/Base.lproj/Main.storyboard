@@ -324,8 +324,8 @@
                                     <constraint firstAttribute="height" constant="420" id="hW5-lw-uXH"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1100,56" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-Md-4su">
-                                <rect key="frame" x="20" y="69" width="353" height="353"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1100,56" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-Md-4su">
+                                <rect key="frame" x="20" y="318" width="353" height="104"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="80"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -333,7 +333,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLV-eK-2pc">
                                 <rect key="frame" x="20" y="101" width="353" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -344,7 +344,6 @@
                             <constraint firstItem="iRv-vJ-sMo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FSp-XU-Q5u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hOy-1c-o18" secondAttribute="trailing" id="Qdp-G3-LeM"/>
                             <constraint firstItem="hOy-1c-o18" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VAt-k4-avb"/>
-                            <constraint firstItem="S7P-Md-4su" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Xrd-Nq-xDt"/>
                             <constraint firstItem="gLV-eK-2pc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZqV-E6-h2r"/>
                             <constraint firstAttribute="bottom" secondItem="hOy-1c-o18" secondAttribute="bottom" id="dlT-3a-iwX"/>
                             <constraint firstItem="gLV-eK-2pc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="e4c-KQ-Z8a"/>

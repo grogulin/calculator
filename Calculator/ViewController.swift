@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var debugLabel: UILabel!
     
-//    var numberButtons: [UIButton]!
-    
     var debug : Bool = false
     
     var firstArg : Decimal = 0
@@ -26,6 +24,7 @@ class ViewController: UIViewController {
     
     var firstArgIsBeingTyped : Bool = true
     var decimalPartIsBeingTyped : Bool = false
+    var autoACActive : Bool = false
     
     
     let operations = ["add", "subtract", "multiply", "divide"]
@@ -39,7 +38,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        resultLabel.text = String(firstArg)
         updateResultLabel(result: firstArg)
         
         configureACButton()
@@ -54,18 +52,20 @@ class ViewController: UIViewController {
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(showArgs), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(showArgs), userInfo: nil, repeats: true)
     }
     
     @objc func showArgs() {
         debugLabel.text = """
         firstArg = \(firstArg)
         secondArg = \(secondArg)
+        result = \(result)
         firstArgIsBeingTyped: \(firstArgIsBeingTyped)
         decimalPartIsBeingTyped: \(decimalPartIsBeingTyped)
         currentOperation: \(currentOperation)
         previousOperation: \(previousOperation)
         previousSecondArg: \(previousSecondArg)
+        autoACActive: \(autoACActive)
         """
     }
     
@@ -76,41 +76,36 @@ class ViewController: UIViewController {
     @objc func acButtonPressed() {
         firstArg = 0
         secondArg = 0
+        result = 0
         decimalPart = ""
         
         firstArgIsBeingTyped = true
         decimalPartIsBeingTyped = false
-//        resultLabel.text = String(firstArg)
         updateResultLabel(result: firstArg)
     }
-    
-    
-    
     
     
     @IBAction func numberButtonPressed(_ sender: UIButton) {
         
         guard let numberPressed = sender.titleLabel?.text else { return  }
         
+        if autoACActive {
+            autoACActive = false
+            acButtonPressed()
+        }
+        
         let number = Int(numberPressed) ?? 0
         
-        
-        
-        
         if decimalPartIsBeingTyped {
-            print("1. First arg: \(firstArg), Second arg: \(secondArg)")
             addToDecimalPart(number: number)
         } else {
-            
             if firstArgIsBeingTyped {
                 addToFirstArg(number: numberPressed)
             }
             else if !firstArgIsBeingTyped {
                 addToSecondArg(number: numberPressed)
             }
-            
         }
-            
     }
 
     func updateResultLabel(result: Decimal) {
@@ -123,37 +118,23 @@ class ViewController: UIViewController {
         else {
             resultLabel.text = String(Int(tempResult))
         }
-        
-        
-
     }
     
-    
-    
     func addToFirstArg(number: String) {
-
-//        print("Firstarg is \(String(firstArg).split(separator: ".", maxSplits: 2, omittingEmptySubsequences: true)[0])")
-//        print("Secondarg is \(number)")
         
         let valueToAdd = String(Int(truncating: firstArg as NSNumber))
         firstArg = Decimal(string: valueToAdd + number) ?? 0
-//        resultLabel.text = String(firstArg)
         updateResultLabel(result: firstArg)
-        
     }
-    
     
     func addToSecondArg(number: String) {
 
         let valueToAdd = String(Int(truncating: secondArg as NSNumber))
         secondArg = Decimal(string: valueToAdd + number) ?? 0
-//        resultLabel.text = String(firstArg)
         updateResultLabel(result: secondArg)
-        
     }
     
     func addToDecimalPart(number: Int) {
-        print("Function addToDecimalPart fired!")
         decimalPart = decimalPart + String(number)
         
         if firstArgIsBeingTyped {
@@ -163,27 +144,20 @@ class ViewController: UIViewController {
             secondArg = Decimal(string: String(Int(truncating: secondArg as NSNumber)) + "." + decimalPart) ?? 0
             updateResultLabel(result: secondArg)
         }
-        
-        
-        
-        print("First arg: \(firstArg), Second arg: \(secondArg)")
-        
-        
-//        resultLabel.text = String(firstArg)
-        
-        
     }
     
     func operationButtonPressed() {
         firstArgIsBeingTyped = !firstArgIsBeingTyped
         decimalPartIsBeingTyped = false
         decimalPart = ""
+        autoACActive = false
+        
+        
     }
     
     @IBAction func plusButtonPressed(_ sender: UIButton) {
         operationButtonPressed()
         currentOperation = operations[0]
-
     }
 
     
@@ -203,6 +177,7 @@ class ViewController: UIViewController {
     
     @IBAction func equalsButtonPressed(_ sender: UIButton) {
         
+        
         if currentOperation != "" {
             runOperation(left: firstArg, right: secondArg, currentOperation: currentOperation)
             
@@ -212,29 +187,21 @@ class ViewController: UIViewController {
             secondArg = 0
         }
         else {
-            runOperation(left: firstArg, right: previousSecondArg, currentOperation: previousOperation)
+            runOperation(left: result, right: previousSecondArg, currentOperation: previousOperation)
         }
         
         firstArgIsBeingTyped = true
         decimalPartIsBeingTyped = false
         
-        
-        
-        
-        
+        autoACActive = true
     }
-    
     
     @IBAction func decimalButtonPressed(_ sender: UIButton) {
         decimalPartIsBeingTyped = !decimalPartIsBeingTyped
         resultLabel.text! += "."
-        print("Shifted to decimals: \(decimalPartIsBeingTyped)")
-        
     }
     
     func runOperation(left : Decimal, right : Decimal, currentOperation : String) {
-        
-        
         
         switch currentOperation {
             case "add" : result = left + right
@@ -244,16 +211,9 @@ class ViewController: UIViewController {
             default : print("Have no operation to run!")
         }
         
-//        resultLabel.text = String(result)
-        firstArg = result
         updateResultLabel(result: result)
-        
+        firstArg = result
     }
-    
-    
-
-    
-
 }
 
 extension Decimal {
@@ -264,6 +224,3 @@ extension Decimal {
         return self-(b*(f))
     }
 }
-
-
-
