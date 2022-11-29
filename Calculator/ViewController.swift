@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var debugLabel: UILabel!
     
-    var debug : Bool = false
+    var debug : Bool = true
     
     var firstArg : Decimal = 0
     var secondArg : Decimal = 0
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     var timer : Timer!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateResultLabel(result: firstArg)
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(showArgs), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(showArgs), userInfo: nil, repeats: true)
     }
     
     @objc func showArgs() {
@@ -66,6 +67,7 @@ class ViewController: UIViewController {
         previousOperation: \(previousOperation)
         previousSecondArg: \(previousSecondArg)
         autoACActive: \(autoACActive)
+        MadnessLength: \(array.count)
         """
     }
     
@@ -177,7 +179,6 @@ class ViewController: UIViewController {
     
     @IBAction func equalsButtonPressed(_ sender: UIButton) {
         
-        
         if currentOperation != "" {
             runOperation(left: firstArg, right: secondArg, currentOperation: currentOperation)
             
@@ -213,6 +214,20 @@ class ViewController: UIViewController {
         
         updateResultLabel(result: result)
         firstArg = result
+    }
+    
+    
+    @IBAction func plusMinusButtonPressed(_ sender: UIButton) {
+        
+        
+        if firstArgIsBeingTyped {
+            firstArg = -firstArg
+            updateResultLabel(result: firstArg)
+        }
+        else {
+            secondArg = -secondArg
+            updateResultLabel(result: secondArg)
+        }
     }
 }
 
