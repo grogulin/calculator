@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var debugLabel: UILabel!
     
-    var debug : Bool = true
+    var debug : Bool = false
     
     var firstArg : Decimal = 0
     var secondArg : Decimal = 0
@@ -67,7 +67,6 @@ class ViewController: UIViewController {
         previousOperation: \(previousOperation)
         previousSecondArg: \(previousSecondArg)
         autoACActive: \(autoACActive)
-        MadnessLength: \(array.count)
         """
     }
     
